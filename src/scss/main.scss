@@ -36,65 +36,76 @@ body {
 }
 
 /* 2. Content ================================= */
-.scoop{
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	border-radius: 100%;
+.sundae{
+
+	.icecream{
+		
+		top: 25%;
+		.scoop{
+			width: 70px;
+			height: 70px;
+			position: absolute;
+			border-radius: 100%;
+			
+			transform: translate(-50%, -50%);
+		}
+		.vanilla{
+			top: 25%;
+			left: 40%;
+			background-color: rgb(241, 241, 198);
+		}
+		.chocolate{
+			top: 25%;
+			left: 45%;
+			background-color: rgb(59, 46, 34);
+		}
+		.strawberry{
+			top: 25%;
+			left: 50%;
+			background-color: rgb(173, 84, 84);
+		}
+		.top{
+			top: 21%;
+			left: 45%;
+			width: 75px;
+			height: 75px;
+			background-color: rgba(243, 239, 239, 0.966);
+		}
+		.banana{
+			z-index: -1;
+			top: 20%;
+			left: 33%;
+			width: 250px;
+			height: 80px;
+			border-radius: 60%;
+			position: absolute;
+			box-shadow: 5px 25px 0 0 rgb(241, 241, 148);
+		}
+
+	}
+	
+	.bowl{
+		z-index: 1;
+		position: absolute;
+		top: 33%;
+		left: 45%;
+		transform: translate(-50%, -50%);
+		height: 75px;
+		width: 240px;
+		border-radius: 0 0 150px 150px;
+		background-color: rgb(168, 219, 217);
+		.bottom{
+			top: 95%;
+			left: 50%;
+			height: 30px;
+			width: 150px;
+			background-color: rgb(168, 219, 217);
+			border-radius: 150px 150px 0 0;
+		}
+	}
+
 }
 
-.vanilla{
-	top: 25%;
-	left: 40%;
-	transform: translate(-50%, -50%);
-	background-color: rgb(241, 241, 198);
-}
-.chocolate{
-	top: 25%;
-	left: 45%;
-	transform: translate(-50%, -50%);
-	background-color: rgb(59, 46, 34);
-}
-.strawberry{
-	top: 25%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background-color: rgb(173, 84, 84);
-}
-.top{
-	top: 21%;
-	left: 45%;
-	width: 60px;
-	height: 60px;
-	transform: translate(-50%, -50%);
-	background-color: rgba(243, 239, 239, 0.966);
-}
-.banana{
-	z-index: -1;
-    top: 19%;
-    left: 31%;
-	width: 200px;
-	height: 60px;
-	border-radius: 60%;
-	position: absolute;
-	box-shadow: 5px 25px 0 0 rgb(241, 241, 148);
-}
-.bowl{
-	z-index: 1;
-	position: absolute;
-	top: 33%;
-	left: 45%;
-	transform: translate(-50%, -50%);
-	height: 75px;
-	width: 240px;
-	border-radius: 0 0 150px 150px;
-	background-color: rgb(168, 219, 217);
-	.bottom{
-		top: 95%;
-		left: 50%;
-		height: 30px;
-		width: 150px;
-		background-color: rgb(168, 219, 217);
-		border-radius: 150px 150px 0 0;
-	}
-}
+
+
+

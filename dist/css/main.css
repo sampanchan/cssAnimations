@@ -31,59 +31,57 @@ body {
 }
 
 /* 2. Content ================================= */
-.scoop {
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	border-radius: 100%;
+.sundae .icecream {
+	top: 25%;
 }
 
-.vanilla {
-	top: 25%;
-	left: 40%;
+.sundae .icecream .scoop {
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	border-radius: 100%;
 	-webkit-transform: translate(-50%, -50%);
 	        transform: translate(-50%, -50%);
+}
+
+.sundae .icecream .vanilla {
+	top: 25%;
+	left: 40%;
 	background-color: #f1f1c6;
 }
 
-.chocolate {
+.sundae .icecream .chocolate {
 	top: 25%;
 	left: 45%;
-	-webkit-transform: translate(-50%, -50%);
-	        transform: translate(-50%, -50%);
 	background-color: #3b2e22;
 }
 
-.strawberry {
+.sundae .icecream .strawberry {
 	top: 25%;
 	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	        transform: translate(-50%, -50%);
 	background-color: #ad5454;
 }
 
-.top {
+.sundae .icecream .top {
 	top: 21%;
 	left: 45%;
-	width: 60px;
-	height: 60px;
-	-webkit-transform: translate(-50%, -50%);
-	        transform: translate(-50%, -50%);
+	width: 75px;
+	height: 75px;
 	background-color: rgba(243, 239, 239, 0.966);
 }
 
-.banana {
+.sundae .icecream .banana {
 	z-index: -1;
-	top: 19%;
-	left: 31%;
-	width: 200px;
-	height: 60px;
+	top: 20%;
+	left: 33%;
+	width: 250px;
+	height: 80px;
 	border-radius: 60%;
 	position: absolute;
 	box-shadow: 5px 25px 0 0 #f1f194;
 }
 
-.bowl {
+.sundae .bowl {
 	z-index: 1;
 	position: absolute;
 	top: 33%;
@@ -96,7 +94,7 @@ body {
 	background-color: #a8dbd9;
 }
 
-.bowl .bottom {
+.sundae .bowl .bottom {
 	top: 95%;
 	left: 50%;
 	height: 30px;

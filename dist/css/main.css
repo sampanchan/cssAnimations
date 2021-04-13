@@ -1,0 +1,108 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+0. Reset
+1. Main Layout
+2. Content
+
+==============================================
+*/
+/* 0. Reset ================================= */
+/* 
+If you want to add partials, use Sass Modules via @use:
+@use 'variables';
+
+Usage: partial-name.variable/mixin/function-name:
+background: variables.$primary-color;
+*/
+@use 'reset';
+/* 1. Main Layout ================================= */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #a2a3a3;
+}
+
+/* 2. Content ================================= */
+.scoop {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	border-radius: 100%;
+}
+
+.vanilla {
+	top: 25%;
+	left: 40%;
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	background-color: #f1f1c6;
+}
+
+.chocolate {
+	top: 25%;
+	left: 45%;
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	background-color: #3b2e22;
+}
+
+.strawberry {
+	top: 25%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	background-color: #ad5454;
+}
+
+.top {
+	top: 21%;
+	left: 45%;
+	width: 60px;
+	height: 60px;
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	background-color: rgba(243, 239, 239, 0.966);
+}
+
+.banana {
+	z-index: -1;
+	top: 19%;
+	left: 31%;
+	width: 200px;
+	height: 60px;
+	border-radius: 60%;
+	position: absolute;
+	box-shadow: 5px 25px 0 0 #f1f194;
+}
+
+.bowl {
+	z-index: 1;
+	position: absolute;
+	top: 33%;
+	left: 45%;
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	height: 75px;
+	width: 240px;
+	border-radius: 0 0 150px 150px;
+	background-color: #a8dbd9;
+}
+
+.bowl .bottom {
+	top: 95%;
+	left: 50%;
+	height: 30px;
+	width: 150px;
+	background-color: #a8dbd9;
+	border-radius: 150px 150px 0 0;
+}
+
+/*# sourceMappingURL=main.css.map */

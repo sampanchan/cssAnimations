@@ -193,6 +193,12 @@ body {
   height: 25px;
   border-radius: 50%;
   background: #f34916;
+  -webkit-animation-name: cherry-drop;
+          animation-name: cherry-drop;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .container-s .sundae-container .whip-cream {
   position: absolute;
@@ -202,6 +208,12 @@ body {
   height: 80px;
   border-radius: 50%;
   background: #f5f3e7;
+  -webkit-animation-name: cream-drop;
+          animation-name: cream-drop;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .container-s .sundae-container .scoop {
   width: 80px;
@@ -214,12 +226,24 @@ body {
   position: absolute;
   top: 0%;
   left: 65%;
+  -webkit-animation-name: chocolate-drop;
+          animation-name: chocolate-drop;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .container-s .sundae-container .scoop:nth-child(4) {
   background: #f37f7b;
   position: absolute;
   top: 0%;
   left: 135%;
+  -webkit-animation-name: berry-drop;
+          animation-name: berry-drop;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .container-s .sundae-container .banana {
   z-index: -1;
@@ -519,5 +543,71 @@ body {
 .container-p .controller-container .controller-part-four:nth-child(7) {
   top: 50%;
   left: 55%;
+}
+
+@-webkit-keyframes cherry-drop {
+  0% {
+    top: -250%;
+  }
+  100% {
+    top: -85%;
+  }
+}
+
+@keyframes cherry-drop {
+  0% {
+    top: -250%;
+  }
+  100% {
+    top: -85%;
+  }
+}
+@-webkit-keyframes cream-drop {
+  0% {
+    top: -250%;
+  }
+  100% {
+    top: -85%;
+  }
+}
+@keyframes cream-drop {
+  0% {
+    top: -250%;
+  }
+  100% {
+    top: -85%;
+  }
+}
+@-webkit-keyframes chocolate-drop {
+  0% {
+    top: -250%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+@keyframes chocolate-drop {
+  0% {
+    top: -250%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+@-webkit-keyframes berry-drop {
+  0% {
+    top: -250%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+@keyframes berry-drop {
+  0% {
+    top: -250%;
+  }
+  100% {
+    top: 0%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

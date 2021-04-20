@@ -40,7 +40,12 @@ body {
 
 	
 	
-
+.parent{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 0 auto;
+	margin-top: 5rem;
 	.container-s{
 		width: 400px;
 		height: 400px;
@@ -50,7 +55,7 @@ body {
 			color: white;
 			font-size: 5em;
 			position: absolute;
-			top: 15%;
+			top: -15%;
 			left: 10%;
 		}
 		.sundae-container{
@@ -79,7 +84,7 @@ body {
 				border-radius: 50%;
 				background: rgb(245, 243, 231);
 				animation-name: cream-drop;
-				animation-duration: 3s;
+				animation-duration: 4s;
 				animation-iteration-count: infinite;
 			}
 			.scoop{
@@ -88,6 +93,9 @@ body {
 				height: 80px;
 				border-radius: 50%;
 				background: rgb(245, 240, 193);
+				animation-name: vanilla-drop;
+				animation-duration: 3s;
+				animation-iteration-count: infinite;
 			}
 			.scoop:nth-child(3){
 				background: rgb(83, 55, 18);
@@ -95,8 +103,9 @@ body {
 				top: 0%;
 				left: 65%;
 				animation-name: chocolate-drop;
-				animation-duration: 2s;
+				animation-duration: 3s;
 				animation-iteration-count: infinite;
+				
 			}
 			.scoop:nth-child(4){
 				background: rgb(243, 127, 123);
@@ -104,7 +113,7 @@ body {
 				top:0%;
 				left:135%;
 				animation-name: berry-drop;
-				animation-duration: 2.5s;
+				animation-duration: 3s;
 				animation-iteration-count: infinite;
 			}
 			.banana{
@@ -116,6 +125,9 @@ body {
 				border-radius: 60%;
 				position: absolute;
 				box-shadow: 5px 25px 0 0 rgb(241, 241, 148);
+				animation-name: banana-sway;
+				animation-duration: 3s;
+				animation-iteration-count: infinite;
 			}
 			.bowl{
 				z-index: 1;
@@ -136,25 +148,35 @@ body {
 				border-radius: 150px 150px 0 0;
 				}
 			}
-			.spoon{
+			.spoon-container{
 				position: absolute;
-				top: -85%;
-    			left: 185%;
-				transform: rotate(-45deg);
-				width:40px;
-				height: 20px;
-				background: rgb(105, 104, 104);
-				border-radius: 100px / 50px;
-				.spoon-handle{
-					position: relative;
-					top: 23%;
-					left: 70%;
-					width: 70px;
-					height: 10px;
-					border-radius: 100px / 50px;
+				top: -65%;
+				left: 180%;
+				animation-name: spoon-dig;
+				animation-duration: 2.2s;
+				animation-iteration-count: infinite;
+				.spoon{
+					position: absolute;
+					// top: -85%;
+					// left: 185%;
+					transform: rotate(-45deg);
+					width:40px;
+					height: 20px;
 					background: rgb(105, 104, 104);
+					border-radius: 100px / 50px;
+					.spoon-handle{
+						position: relative;
+						top: 23%;
+						left: 70%;
+						width: 70px;
+						height: 10px;
+						border-radius: 100px / 50px;
+						background: rgb(105, 104, 104);
+					}
+					
 				}
 			}
+			
 
 			
 		
@@ -163,7 +185,6 @@ body {
 
 
 	}
-
 	.container-p{
 		width: 400px;
 		height: 400px;
@@ -174,7 +195,7 @@ body {
 			color: white;
 			font-size: 5em;
 			position: absolute;
-			top: 15%;
+			top: -15%;
 			left: 10%;
 		}
 
@@ -209,6 +230,9 @@ body {
 				position: absolute;
 				top:10%;
 				background: rgb(43, 71, 228);
+				animation-name: playstation-glow;
+				animation-duration: 2s;
+				animation-iteration-count: infinite;
 			}
 			.blue:nth-child(4){
 				position: absolute;
@@ -316,6 +340,11 @@ body {
 					bottom: 11%;
 					left: 40%;
 				}
+				#bottom-arrow-animation{
+					animation-name: playstation-side-bottom-arrow;
+					animation-duration: 1.5s;
+					animation-iteration-count: infinite;
+				}
 				.side-right{
 					position: absolute;
 					width: 0;
@@ -326,6 +355,11 @@ body {
 					bottom: 37%;
 					right: 65%;
 				
+				}
+				#right-arrow-animation{
+					animation-name: playstation-side-right-arrow;
+					animation-duration: 1.5s;
+					animation-iteration-count: infinite;
 				}
 				.side-left{
 					position: absolute;
@@ -351,6 +385,11 @@ body {
 					z-index: 2;
 					top:10%;
 					left: 40%;
+				}
+				#top-arrow-animation{
+					animation-name: playstation-side-top-arrow;
+					animation-duration: 1.5s;
+					animation-iteration-count: infinite;
 				}
 				.bottom{
 					position: absolute;
@@ -384,6 +423,11 @@ body {
 					top: 40%;
 					left: 65%;
 				}
+				#left-arrow-animation{
+					animation-name: playstation-side-left-arrow;
+					animation-duration: 1.5s;
+					animation-iteration-count: infinite;
+				}
 			}
 			.controller-part-four{
 				position: absolute;
@@ -404,6 +448,9 @@ body {
 				z-index: 1;
 				top:15%;
 				right:18%;
+				animation-name: playstation-left-nub;
+				animation-duration: 1.5s;
+				animation-iteration-count: infinite;
 				}
 				.nubs-right{
 					position: absolute;
@@ -414,6 +461,9 @@ body {
 					z-index: 1;
 					top:15%;
 					left:18%;
+					animation-name: playstation-right-nub;
+					animation-duration: 1.5s;
+					animation-iteration-count: infinite;
 					}
 			}
 			.controller-part-four:nth-child(7){
@@ -424,9 +474,13 @@ body {
 		
 		}
 	}
+}
+	
+
+	
 
 
-	//kayframes
+	//kayframes sundae
 
 	@keyframes cherry-drop{
 		0%{
@@ -439,29 +493,125 @@ body {
 	}
 	@keyframes cream-drop{
 		0%{
-			top:-250%;
+			// top:-250%;
 			
 		}
 		100%{
-			top:-85%;
+			// top:-85%;
+		}
+	}
+	@keyframes vanilla-drop{
+		0%{
+			// top:-250%;
+			opacity: 0;
+			
+		}
+		100%{
+			// top:0%;
+			opacity: 1;
 		}
 	}
 	@keyframes chocolate-drop{
 		0%{
-			top:-250%;
+			// top:-250%;
+			opacity: 0;
 			
 		}
 		100%{
-			top:0%;
+			// top:0%;
+			opacity: 1;
 		}
 	}
 	@keyframes berry-drop{
 		0%{
-			top:-250%;
+			// top:-250%;
+			opacity: 0;
 			
 		}
 		100%{
-			top:0%;
+			// top:0%;
+			opacity: 1;
+		}
+	}
+	@keyframes banana-sway{
+		0%{
+			transform: rotate(10deg);
+			
+		}
+		50%{
+			transform: rotate(-5deg);
+		}
+		100%{
+			transform: rotate(10deg);
+		}
+	}
+	@keyframes spoon-dig{
+		0%{
+			top:-50%;
+			
+		}
+		100%{
+			left:200%;
+		}
+	}
+
+
+
+
+	//keyframes playstation
+
+	@keyframes playstation-glow{
+		0% {background-color: rgb(14, 38, 177);}
+		50% {background-color: rgb(53, 136, 231);}
+		100% {background-color: rgb(14, 38, 177);}
+	}
+
+	@keyframes playstation-side-right-arrow{
+		0% {
+			left:10%;
+		}
+	}
+	@keyframes playstation-side-bottom-arrow{
+		0% {
+			top:70%;
+		}
+	}
+	@keyframes playstation-side-left-arrow{
+		0% {
+			left:68%;
+		}
+	}
+	@keyframes playstation-side-top-arrow{
+		0% {
+			top:13%;
+		}
+	}
+	@keyframes playstation-left-nub{
+		0% {
+			top:20%;
+		}
+		25%{
+			right:20%;
+		}
+		50%{
+			left:20%;
+		}
+		100%{
+			bottom:20%;
+		}
+	}
+	@keyframes playstation-right-nub{
+		0% {
+			top:20%;
+		}
+		25%{
+			right:30%;
+		}
+		50%{
+			left:20%;
+		}
+		100%{
+			bottom:30%;
 		}
 	}
 	

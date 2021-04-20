@@ -75,8 +75,8 @@ body {
 	background: #f34916;
 	-webkit-animation-name: cherry-drop;
 	        animation-name: cherry-drop;
-	-webkit-animation-duration: 3.5s;
-	        animation-duration: 3.5s;
+	-webkit-animation-duration: 2.5s;
+	        animation-duration: 2.5s;
 	-webkit-animation-iteration-count: infinite;
 	        animation-iteration-count: infinite;
 }
@@ -542,7 +542,7 @@ body {
 
 @-webkit-keyframes cherry-drop {
 	0% {
-		top: -250%;
+		top: -180%;
 	}
 	100% {
 		top: -85%;
@@ -551,7 +551,7 @@ body {
 
 @keyframes cherry-drop {
 	0% {
-		top: -250%;
+		top: -180%;
 	}
 	100% {
 		top: -85%;

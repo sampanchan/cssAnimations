@@ -72,7 +72,7 @@ body {
 				border-radius: 50%;
 				background: rgb(243, 73, 22);
 				animation-name: cherry-drop;
-				animation-duration: 3.5s;
+				animation-duration: 2.5s;
 				animation-iteration-count: infinite;
 			}
 			.whip-cream{
@@ -484,7 +484,7 @@ body {
 
 	@keyframes cherry-drop{
 		0%{
-			top:-250%;
+			top:-180%;
 			
 		}
 		100%{
